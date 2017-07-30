@@ -27,10 +27,6 @@ describe('Template Component', () => {
     el = de.nativeElement;
   });
 
-  it('test', () => {
-    expect(true).toBeTruthy();
-  })
-
   it('should create the component', () => {
     expect(component).toBeTruthy();
   });
