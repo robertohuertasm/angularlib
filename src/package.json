@@ -1,0 +1,31 @@
+{
+  "name": "angularlib",
+  "version": "1.0.0",
+  "description": "Example of how to create an angular module exporting components in order to be consumed as an npm package.",
+  "main": "bundles/my-components.umd.js",
+  "module": "angularlib-components.es5.js",
+  "es2015": "angularlib-components.js",
+  "typings": "angularlib-components.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.3.0",
+    "@angular/http": "^4.3.0",
+    "@angular/platform-browser": "^4.3.0",
+    "zone.js": "^0.8.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertohuertasm/angularlib.git"
+  },
+  "keywords": [
+    "angular",
+    "modules",
+    "components",
+    "library"
+  ],
+  "author": "Roberto Huertas <roberto.huertas@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertohuertasm/angularlib/issues"
+  },
+  "homepage": "https://github.com/robertohuertasm/angularlib#readme"
+}
