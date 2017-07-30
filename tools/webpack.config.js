@@ -103,10 +103,52 @@ module.exports = function (options) {
                   useWebpackText: true
                 }
               },
-            }
+            },
+            'angular2-template-loader'
           ],
           exclude: [/\.e2e\.ts$/]
         },
+        {
+          test: /\.scss$/,
+          loaders: ['raw-loader', 'sass-loader'],
+          exclude: /node_modules/
+        },
+        
+        /**
+         * Json loader support for *.json files.
+         *
+         * See: https://github.com/webpack/json-loader
+         */
+        {
+          test: /\.json$/,
+          loader: 'json-loader',
+          exclude: [helpers.root('src/index.html')]
+        },
+
+        /**
+         * Raw loader support for *.css files
+         * Returns file content as string
+         *
+         * See: https://github.com/webpack/raw-loader
+         */
+        {
+          test: /\.css$/,
+          loader: ['to-string-loader', 'css-loader'],
+          exclude: [helpers.root('src/index.html')]
+        },
+
+        /**
+         * Raw loader support for *.html
+         * Returns file content as string
+         *
+         * See: https://github.com/webpack/raw-loader
+         */
+        {
+          test: /\.html$/,
+          loader: 'raw-loader',
+          exclude: [helpers.root('src/index.html')]
+        },
+
         /**
          * Instruments JS files with Istanbul for subsequent code coverage reporting.
          * Instrument only testing sources.

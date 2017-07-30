@@ -2,7 +2,7 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { TemplateComponent } from './template.component';
+import { TemplateComponent } from '../../src/components';
 
 describe('Template Component', () => {
   let component: TemplateComponent;
@@ -26,6 +26,10 @@ describe('Template Component', () => {
     de = fixture.debugElement.query(By.css('h2'));
     el = de.nativeElement;
   });
+
+  it('test', () => {
+    expect(true).toBeTruthy();
+  })
 
   it('should create the component', () => {
     expect(component).toBeTruthy();

@@ -2,7 +2,7 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { InlineComponent } from './inline.component';
+import { InlineComponent } from '../../src/components';
 
 describe('Inline Component', () => {
   let component: InlineComponent;
