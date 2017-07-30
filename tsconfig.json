@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "./src",
-    "outDir": "build",
+    "outDir": "build/out",
     "declaration": true,
     "module": "es2015",
     "target": "es5", // FESM5

@@ -8,7 +8,7 @@ const globals = {
 };
 
 export default {
-  entry: 'build/angularlib-components.js',
+  entry: 'build/out/angularlib-components.js',
   dest: 'dist/bundles/angularlib-components.umd.js',
   format: 'umd',
   exports: 'named',

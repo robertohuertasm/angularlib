@@ -1,8 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "rootDir": "./build/src-inline",
     "target": "es2015" // FESM15
   },
+  "files": [
+    "build/src-inline/public_api.ts"
+  ],
   "angularCompilerOptions": {
     "strictMetadataEmit": true, // halt if something is wrong in our metadata
     "skipTemplateCodegen": true, // avoid ng-factories...
