@@ -2,7 +2,7 @@
   "name": "angularlib",
   "version": "1.0.0",
   "description": "Example of how to create an angular module exporting components in order to be consumed as an npm package.",
-  "main": "bundles/my-components.umd.js",
+  "main": "bundles/angularlib-components.umd.js",
   "module": "angularlib-components.es5.js",
   "es2015": "angularlib-components.js",
   "typings": "angularlib-components.d.ts",
