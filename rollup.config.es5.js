@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 
 const globals = {
   '@angular/core': 'ng.core',
+  '@angular/common': 'ng.common',
   'rxjs/Observable': 'Rx',
   'rxjs/add/operator/map': 'Rx.Observable.prototype'
 };
