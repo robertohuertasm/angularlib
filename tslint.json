@@ -7,11 +7,11 @@
   ],
   "rules": {
     "space-before-function-paren": [
-      "error",
+      true,
       {
         "anonymous": "always",
         "named": "never",
-        "asyncArrow": "ignore"
+        "asyncArrow": "always"
       }
     ],
     "arrow-parens": false,
@@ -74,7 +74,7 @@
     ],
     "radix": true,
     "semicolon": [
-      "always"
+      true
     ],
     "triple-equals": [
       true,
